@@ -183,17 +183,22 @@ body {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    background-color: ghostwhite;
+    background-color: grey;
 }
 
 section {
     height: 90vh;
-    /* background-color: blue;
-    border: solid white; */
     flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .aboutMe {
+
+}
+
+.aboutMeIcon {
 
 }
 
@@ -201,14 +206,29 @@ section {
 
 }
 
+.skillsIcon {
+}
+
 .interests {
 
 }
 
+.interestsIcon {
+    
+}
+
+.icon {
+    color: ghostwhite;
+}
+
+div:hover svg * {
+    fill: url(#rg);
+  }
+
 .sectionLine {
     width: 3px;
     height: 20vh;
-    background-color: black;
+    background-color: ghostwhite;
     border-radius: 80%;
     opacity: 0.2;
 }
@@ -218,14 +238,13 @@ footer {
     flex-direction: row;
     justify-content: center;
     height: 10vh;
-    background: rgb(248,248,255);
-    background: linear-gradient(90deg, rgba(248,248,255,1) 0%, rgba(239,239,242,1) 50%, rgba(248,248,255,1) 100%);
+    background-color: grey;
 }
 
 .footerLine {
     width: 70vw;
     height: 2px;
-    background-color: black;
+    background-color: ghostwhite;
     border-radius: 80%;
     opacity: 0.2;
     position: absolute;
