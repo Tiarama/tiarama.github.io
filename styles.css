@@ -26,7 +26,7 @@ body {
 
 .headerBG {
     position: absolute;
-    background-image: url("images/Lake.jpg");
+    background-image: url("images/HeaderBackground.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
