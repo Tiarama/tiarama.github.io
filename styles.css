@@ -192,38 +192,78 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: rgba(0, 0, 0, 0);
+    animation: iconClickText 6s forwards;
 }
 
-.aboutMe {
-
-}
-
-.aboutMeIcon {
-
-}
-
-.skills {
-
-}
-
-.skillsIcon {
-}
-
-.interests {
-
-}
-
-.interestsIcon {
-    
-}
-
-.icon {
-    color: ghostwhite;
-}
-
-div:hover svg * {
-    fill: url(#rg);
+@keyframes iconClickText {
+    0% {
+    }
+    50% {
+  color: rgba(0, 0, 0, 0);
   }
+    100% {
+  color: rgba(0, 0, 0, 1);
+    } 
+}
+
+.sectionGrey {
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    border: 25em solid grey;
+    border-radius: 50%;
+    z-index: -2;
+    /* animation: iconClickGrey 3s forwards; */
+}
+
+@keyframes iconClickGrey {
+    0% {
+    width: 1em;
+    height: 1em;
+    border: 25em solid grey;
+    }
+    100% {
+    width: 50em;
+    height: 50em;
+    border: 1em solid grey;
+    }
+}
+
+.sectionGradient {
+    position: absolute;
+    background-color: pink;
+    height: 90vh;
+    width: auto;
+    z-index: -3;
+}
+
+.sectionWhite {
+    position: absolute;
+    background-color: white;
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 50%;
+    z-index: -2;
+    /* animation: iconClickWhite 4s forwards; */
+}
+
+@keyframes iconClickWhite {
+    0% {
+    }
+    100% {
+    width: 50em;
+    height: 50em;
+    }
+}
+
+.icon * {
+    fill: ghostwhite;
+}
+
+.icon:hover * {
+    fill: url(#rg);
+}
 
 .sectionLine {
     width: 3px;
