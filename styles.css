@@ -126,6 +126,12 @@ body {
     vertical-align: middle;
     bottom: 5%;
     text-align: center;
+    opacity: 0.7
+}
+
+.arrowContainer:hover {
+    opacity: 0.9;
+    transform: scale(1.05)
 }
 
 .headerArrow {
@@ -133,6 +139,7 @@ body {
     height: 4em;
     border: 0.4em solid white;
     border-radius: 50%;
+    background: transparent;
 }
 
 .headerArrow:after {
