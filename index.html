@@ -12,11 +12,9 @@
         <!-- The following SVG is the gradient for the icons-->
         <svg width="0" height="0">
             <radialGradient id="rg" r="150%" cx="30%" cy="107%">
-              <stop stop-color="#FDCA40" offset="0" />
-              <stop stop-color="#F1E3F3" offset="0.35" />
-              <stop stop-color="#99EDCC" offset="0.5" />
-              <stop stop-color="#5DA9E9" offset="0.8" />
-              <stop stop-color="#006D77" offset="0.9" />
+              <stop stop-color="#C6FFDD" offset="0" />
+              <stop stop-color="#FBD786" offset="0.33" />
+              <stop stop-color="#f7797d" offset="0.66" />
             </radialGradient>
           </svg>
         <div class="headerBG"></div>
@@ -32,27 +30,33 @@
         <div class="arrowContainer"><div class="headerArrow" onClick="document.getElementById('footer').scrollIntoView({behaviour:'smooth'});"></div><div class="headerArrowRipple"></div></div>
     </header>
     <article class="main">
-        <section class="aboutMe">
-           <div style="margin: auto;">
-            <i class="fas fa-info fa-6x icon aboutMeIcon"></i>
-        </div>
-        </section>
-        <div class="sectionLine"></div>
-        <section class="skills">
-            <div style="margin: auto;">
-                <i class="fas fa-paint-brush fa-5x icon skillsIcon"></i></div>
+        <div class="mainBG"></div>
+        <section id="aboutMe">
+            <i class="fas fa-info fa-6x icon aboutMeIcon" onClick="applyIconClickAnimation('#aboutMe')"></i>
+            <div class="sectionGray"></div>
+            <div class="sectionGradient"></div>
+            <div class="sectionWhite"></div>
 
         </section>
         <div class="sectionLine"></div>
-        <section class="interests">
-            <div style="margin: auto;">
-                <i class="fas fa-heartbeat fa-5x icon interestsIcon"></i>
-            </div>
+        <section id="skills">
+                <i class="fas fa-paint-brush fa-5x icon skillsIcon" onClick="applyIconClickAnimation('#skills')"></i>
+                <div class="sectionGray"></div>
+                <div class="sectionGradient"></div>
+                <div class="sectionWhite"></div>t
+        </section>
+        <div class="sectionLine"></div>
+        <section id="interests">
+                <i class="fas fa-heartbeat fa-5x icon interestsIcon" onClick="applyIconClickAnimation('#interests')"></i>
+                <div class="sectionGray"></div>
+                <div class="sectionGradient"></div>
+                <div class="sectionWhite"></div>
 
         </section>
     </article>
     <footer>
         <div class="footerLine" id="footer"></div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

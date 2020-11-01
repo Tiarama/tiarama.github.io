@@ -194,7 +194,15 @@ body {
     display: grid;
     grid-template-columns: 1fr auto 1fr auto 1fr;
     align-items: center;
-    background-color: grey;
+    overflow: hidden;
+}
+
+.mainBG {
+    position: absolute;
+    background-color: gray;
+    width: 100%;
+    height: 90%;   
+    z-index: -5;
 }
 
 section {
@@ -203,6 +211,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
     color: rgba(0, 0, 0, 0);
     animation: iconClickText 6s forwards;
 }
@@ -218,53 +227,57 @@ section {
     } 
 }
 
-.sectionGrey {
+.sectionGray {
+    display: none;
+    box-sizing: content-box;
     position: absolute;
-    width: 1em;
-    height: 1em;
-    border: 25em solid grey;
+    width: 0em;
+    height: 0em;
+    border: 30em solid grey;
     border-radius: 50%;
-    z-index: -2;
-    /* animation: iconClickGrey 3s forwards; */
+    z-index: -3;
 }
 
 @keyframes iconClickGrey {
     0% {
-    width: 1em;
-    height: 1em;
-    border: 25em solid grey;
+    width: 0em;
+    height: 0em;
+    border: 30em solid grey;
     }
     100% {
-    width: 50em;
-    height: 50em;
+    width: 55em;
+    height: 55em;
     border: 1em solid grey;
     }
 }
 
 .sectionGradient {
     position: absolute;
-    background-color: pink;
-    height: 90vh;
-    width: auto;
-    z-index: -3;
+    background: #C6FFDD;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    width: 100%;
+    height: 100%;
+    z-index: -6;
 }
 
 .sectionWhite {
+    display: none;
+    box-sizing: content-box;
     position: absolute;
-    background-color: white;
-    width: 0.5em;
-    height: 0.5em;
+    background-color: grey;
+    width: 0em;
+    height: 0em;
     border-radius: 50%;
-    z-index: -2;
-    /* animation: iconClickWhite 4s forwards; */
+    z-index: -3;
 }
 
 @keyframes iconClickWhite {
     0% {
     }
     100% {
-    width: 50em;
-    height: 50em;
+    width: 58em;
+    height: 58em;
     }
 }
 
@@ -272,8 +285,27 @@ section {
     fill: ghostwhite;
 }
 
-.icon:hover * {
-    fill: url(#rg);
+.aboutMeIcon:hover * {
+    fill: #C6FFDD;
+}
+
+.skillsIcon:hover * {
+    fill: #FBD786;
+}
+
+.interestsIcon:hover * {
+    fill: #f7797d;
+}
+
+@keyframes iconClick {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        height: 0em;
+        width: 0em;
+    }
 }
 
 .sectionLine {
