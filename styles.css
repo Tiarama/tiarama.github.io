@@ -380,3 +380,27 @@ footer {
     opacity: 0.2;
     position: absolute;
 }
+
+.footerContent {
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerContent > *{
+    margin: 0 0.8em;
+}
+
+.mailIcon * {
+    fill: #f98e91;
+}
+
+.linkedInIcon * {
+    fill: #AEFB97;;
+}
+
+.twitterIcon * {
+    fill: #6EC0E8;
+}
