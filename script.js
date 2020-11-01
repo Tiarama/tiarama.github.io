@@ -8,13 +8,13 @@ function applyIconClickAnimation(sectionID) {
     const whiteSection = document.querySelector(`${sectionID} .sectionWhite`)
     const gradientSection = document.querySelector(`${sectionID} .sectionGradient`)
     const icon = document.querySelector(`${sectionID} .icon`)
-    const p = document.querySelector(`${sectionID} p`)
+    const text = document.querySelector(`${sectionID} .textContent`)
 
     gradientSection.style['z-index'] = '-4'
     graySection.style.display = 'block'
     whiteSection.style.display = 'block'
-    p.style.display = 'block'
-    p.style.animation = ICON_TEXT_ANIMATION_DEFINITION
+    text.style.display = 'block'
+    text.style.animation = ICON_TEXT_ANIMATION_DEFINITION
     icon.style.animation = ICON_ANIMATION_DEFINITION
     graySection.style.animation = GRAY_ANIMATION_DEFITION
     whiteSection.style.animation = WHITE_ANIMATION_DEFINITION
