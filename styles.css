@@ -71,6 +71,11 @@ body {
     transform: scale(0);
 }
 
+.logoLetter img {
+    position: absolute; 
+    bottom: 0%;
+}
+
 .logoLetter:nth-child(1) {
     animation-delay: 0.1s;
   }
