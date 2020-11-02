@@ -264,6 +264,18 @@ p {
     letter-spacing: 0.02em;
 }
 
+#skills p {
+    font-size: 1.6em;
+}
+
+ul {
+    list-style-type: circle;
+    color: ghostwhite;
+    font-size: 1.1em;
+    font-weight: 1;
+    margin-left: 3em;
+}
+
 @keyframes iconClickText {
     0% {
     }
