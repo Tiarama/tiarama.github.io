@@ -266,15 +266,17 @@ p {
 
 #skills p {
     font-size: 1.6em;
-    margin-left: 12%;
+    margin-left: 10%;
 }
 
 ul {
     list-style-type: circle;
     color: ghostwhite;
     font-size: 1.1em;
+    line-height: 1.2;
     font-weight: 1;
-    margin-left: 15%;
+    margin-left: 10%;
+    margin-right: 5%;
 }
 
 .progressBar {
