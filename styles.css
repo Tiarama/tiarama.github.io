@@ -128,7 +128,7 @@ body {
     }
   }
 
-/* Scroll down button */
+/* Scroll down button & animation */
 .arrowContainer {
     position: absolute;
     display: inline-block;
@@ -194,6 +194,7 @@ body {
     }
 }
 
+/* Content Section */
 .main {
     position: relative;
     display: grid;
@@ -254,7 +255,7 @@ h1 {
     color: #FBD786;
 }
 
-#interests h1 {
+#background h1 {
     color: #f7797d;
 }
 
@@ -281,6 +282,7 @@ ul {
     margin-right: 10%;
 }
 
+/* Custom progress bars */
 .progressBarOuter {
     margin: 0.3em 0 0.5em 1.1em;
     position: relative;
@@ -305,7 +307,7 @@ ul {
   }
 
 
-/* Section icons & onClick animations */
+/* Section icon click animations & icon properties*/
 @keyframes iconClickText {
     0% {
     }
@@ -317,7 +319,7 @@ ul {
     } 
 }
 
-.sectionGray {
+.bubbleOuter {
     display: none;
     box-sizing: content-box;
     position: absolute;
@@ -328,7 +330,7 @@ ul {
     z-index: -3;
 }
 
-@keyframes iconClickGrey {
+@keyframes bubbleOuterAnimation {
     0% {
     width: 0em;
     height: 0em;
@@ -341,7 +343,7 @@ ul {
     }
 }
 
-.sectionGradient {
+.bubbleGradient {
     position: absolute;
     background: #C6FFDD;
     background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
@@ -352,7 +354,7 @@ ul {
     z-index: -6;
 }
 
-.sectionWhite {
+.bubbleInner {
     display: none;
     box-sizing: content-box;
     position: absolute;
@@ -363,12 +365,12 @@ ul {
     z-index: -3;
 }
 
-@keyframes iconClickWhite {
+@keyframes bubbleInnerAnimation {
     0% {
     }
     100% {
-    width: 58em;
-    height: 58em;
+    width: 60em;
+    height: 60em;
     }
 }
 
@@ -407,12 +409,13 @@ ul {
     opacity: 0.2;
 }
 
+/* Footer */
 footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
     height: 10vh;
-    background: linear-gradient(gray 0%, 80%, lightgray 95%);
+    background: linear-gradient(gray 0%, 90%, #7a8c93 95%);
 }
 
 .footerLine {
@@ -437,13 +440,21 @@ footer {
 }
 
 .mailIcon * {
-    fill: #f98e91;
+    fill: white;
 }
 
-.linkedInIcon * {
-    fill: #AEFB97;;
+.linkedinIcon * {
+    fill: white;;
 }
 
 .twitterIcon * {
-    fill: #6EC0E8;
+    fill: white;
+}
+
+.githubIcon * {
+    fill: white;
+}
+
+.codewarsIcon * {
+    fill: white;
 }

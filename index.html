@@ -9,16 +9,10 @@
     <title>Tiarama</title>
 </head>
 <body>
+    <!-- Hero -->
     <header class="header">
-        <!-- The following SVG is the gradient for the icons-->
-        <svg width="0" height="0">
-            <radialGradient id="rg" r="150%" cx="30%" cy="107%">
-              <stop stop-color="#C6FFDD" offset="0" />
-              <stop stop-color="#FBD786" offset="0.33" />
-              <stop stop-color="#f7797d" offset="0.66" />
-            </radialGradient>
-          </svg>
         <div class="headerBG"></div>
+        <!-- Tiarama logo -->
         <div class="logo">
             <div class="logoLetter"><img style="height: 200%; left: -20%;" src="images/logoImages/logoT.svg" alt="T"></div>
             <div class="logoLetter"><img style="height: 200%; left: 40%;" src="images/logoImages/logoI.svg" alt="I"></div>
@@ -30,8 +24,10 @@
         </div>
         <div class="arrowContainer"><div class="headerArrow" onClick="document.getElementById('footer').scrollIntoView({behaviour:'smooth'});"></div><div class="headerArrowRipple"></div></div>
     </header>
+    <!-- Content section -->
     <article class="main">
         <div class="mainBG"></div>
+        <!-- Left column -->
         <section id="aboutMe">
             <div class="textContent">
                 <h1>whoAmI?</h1>   
@@ -39,16 +35,17 @@
                 <h1 style="padding-right: 20%">whatIsIt?</h1>
                 <p>This is my webpage. It's really for myself: to build on as my coding improves and to showcase new skills as I learn them. It's fun putting things like this together, but it gives you an idea of my current level too. You must be curious or you wouldn't be here, right? &hearts;</p>
                 <h1 style="padding-left: 20%">why.</h1>
-                <p>Everybody, <i><sup style="font-size:90%">not forgetting you</sup></i>, has been through times where we've needed to make big, scary changes to our lives. <strong>This is one of those times for me</strong>. The tech universe has always provoked a fascination and an excitement to learn in myself, so I decided I would finally be brave enough throw myself into the water without a wetsuit. Admittedly I am terrified, but I think that's part of the fun.</p>
+                <p>Everybody, <i><sup style="font-size:90%">not forgetting you</sup></i>, has been through times where we've needed to make big, scary changes to our lives. <strong>This is one of those times for me</strong>. The tech universe has always provoked a fascination and an excitement to learn in myself, so I decided I would finally be brave enough to throw myself into the ocean. Admittedly I am terrified, but I think that's part of the fun.</p>
                 <br/><br/><br/><br/><br/><br/>
             </div>
             <i class="fas fa-info fa-6x icon aboutMeIcon" onClick="applyIconClickAnimation('#aboutMe')"></i>
-            <div class="sectionGray"></div>
-            <div class="sectionGradient"></div>
-            <div class="sectionWhite"></div>
+            <div class="bubbleOuter"></div>
+            <div class="bubbleGradient"></div>
+            <div class="bubbleInner"></div>
 
         </section>
         <div class="sectionLine"></div>
+        <!-- Middle column -->
         <section id="skills">
             <div class="textContent">
                 <h1>mySkills.</h1>   
@@ -94,12 +91,13 @@
                 <br/><br/><br/><br/><br/><br/>
             </div> 
                 <i class="fas fa-paint-brush fa-5x icon skillsIcon" onClick="applyIconClickAnimation('#skills')"></i>
-                <div class="sectionGray"></div>
-                <div class="sectionGradient"></div>
-                <div class="sectionWhite"></div>
+                <div class="bubbleOuter"></div>
+                <div class="bubbleGradient"></div>
+                <div class="bubbleInner"></div>
         </section>
         <div class="sectionLine"></div>
-        <section id="interests">
+        <!-- Right column -->
+        <section id="background">
                 <div class="textContent">
                     <h1>background.</h1>   
                     <p>Who doesn't want to spend their childhood in the countryside? Discovering a world with animals, forests, lakes, and so many fields to run through it would make Theresa May jealous. Although, growing up as a queer POC in a little old English village did come with it's fair share of challenges. I was forced to think outside the box from an early age and it's because of this that I've always loved to create. Sculptures, stories, songs, poetry, games... I was definitely one of those kids who could only give elaborate answers to simple questions.</p>
@@ -109,19 +107,22 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     <br/><br/><br/><br/><br/><br/>
                 </div>
-                <i class="fas fa-heartbeat fa-5x icon interestsIcon" onClick="applyIconClickAnimation('#interests')"></i>
-                <div class="sectionGray"></div>
-                <div class="sectionGradient"></div>
-                <div class="sectionWhite"></div>
+                <i class="fas fa-heartbeat fa-5x icon interestsIcon" onClick="applyIconClickAnimation('#background')"></i>
+                <div class="bubbleOuter"></div>
+                <div class="bubbleGradient"></div>
+                <div class="bubbleInner"></div>
 
         </section>
     </article>
+    <!-- Footer, duh! -->
     <footer>
         <div class="footerLine" id="footer"></div>
         <div class="footerContent">
             <i class="fas fa-envelope fa-2x mailIcon"></i>
-            <i class="fab fa-linkedin-in fa-2x linkedInIcon"></i>
+            <i class="fab fa-linkedin-in fa-2x linkedinIcon"></i>
             <i class="fab fa-twitter fa-2x twitterIcon"></i>
+            <i class="fab fa-github fa-2x githubIcon"></i>
+            <i class="fab fa-galactic-republic fa-2x codewarsIcon"></i>
         </div>
     </footer>
     <script src="script.js"></script>
