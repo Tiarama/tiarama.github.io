@@ -302,7 +302,7 @@ ul {
     margin-left: 3%;
     padding-left: 40%;
     border-radius: 999px;
-    background: linear-gradient(128deg, rgba(123,223,242,1) 0%, rgba(247,214,224,1) 100%);
+    background: linear-gradient(128deg, #C6FFDD 0%, #FBD786 60%, #f7797d 100%);
     box-shadow: inset -1px 2px 5px 0px grey
   }
 
