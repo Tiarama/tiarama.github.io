@@ -419,7 +419,7 @@ footer {
     flex-direction: row;
     justify-content: center;
     height: 10vh;
-    background: linear-gradient(gray 0%, 90%, #7a8c93 95%);
+    background: linear-gradient(to right, #C6FFDD , #FBD786, #f7797d)
 }
 
 .footerLine {
@@ -432,8 +432,10 @@ footer {
 }
 
 .footerContent {
+    background: linear-gradient(gray 0%, 94%, transparent 99%);
     display: flex;
     height: 100%;
+    width: 100vw;
     flex-direction: row;
     align-items: center;
     justify-content: center;
