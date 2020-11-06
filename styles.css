@@ -376,18 +376,22 @@ ul {
 
 .icon * {
     fill: ghostwhite;
+    filter: drop-shadow( 5px 3px 5px rgba(0, 0, 0, .7));
 }
 
 .aboutMeIcon:hover * {
     fill: #C6FFDD;
+    filter: drop-shadow( 0 0 150px rgba(198, 255, 221, .7));
 }
 
 .skillsIcon:hover * {
     fill: #FBD786;
+    filter: drop-shadow( 0 0 150px rgba(251, 215, 134, .7));
 }
 
 .interestsIcon:hover * {
     fill: #f7797d;
+    filter: drop-shadow( 0 0 150px rgba(247, 121, 125, .7));
 }
 
 @keyframes iconClick {
@@ -440,21 +444,16 @@ footer {
 }
 
 .mailIcon * {
-    fill: white;
 }
 
 .linkedinIcon * {
-    fill: white;;
 }
 
 .twitterIcon * {
-    fill: white;
 }
 
 .githubIcon * {
-    fill: white;
 }
 
 .codewarsIcon * {
-    fill: white;
 }
