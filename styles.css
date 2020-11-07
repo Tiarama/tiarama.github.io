@@ -205,7 +205,7 @@ body {
 
 .mainBG {
     position: absolute;
-    background-color: gray;
+    background-color: #4d4d4d;
     width: 100%;
     height: 100%;   
     z-index: -5;
@@ -325,7 +325,7 @@ ul {
     position: absolute;
     width: 0em;
     height: 0em;
-    border: 30em solid grey;
+    border: 30em solid #4d4d4d;
     border-radius: 50%;
     z-index: -3;
 }
@@ -334,12 +334,12 @@ ul {
     0% {
     width: 0em;
     height: 0em;
-    border: 30em solid grey;
+    border: 30em solid #4d4d4d;
     }
     100% {
     width: 58em;
     height: 58em;
-    border: 1em solid grey;
+    border: 1em solid #4d4d4d;
     }
 }
 
@@ -358,7 +358,7 @@ ul {
     display: none;
     box-sizing: content-box;
     position: absolute;
-    background-color: grey;
+    background-color: #4d4d4d;
     width: 0em;
     height: 0em;
     border-radius: 50%;
@@ -432,7 +432,7 @@ footer {
 }
 
 .footerContent {
-    background: linear-gradient(gray 0%, 94%, transparent 99%);
+    background: linear-gradient(#4d4d4d 0%, 94%, transparent 99%);
     display: flex;
     height: 100%;
     width: 100vw;
@@ -441,21 +441,15 @@ footer {
     justify-content: center;
 }
 
-.footerContent > *{
+.footerContent > * {
     margin: 0 0.8em;
 }
 
-.mailIcon * {
+.footerContent .icon {
+    opacity: 0.8;
 }
 
-.linkedinIcon * {
-}
-
-.twitterIcon * {
-}
-
-.githubIcon * {
-}
-
-.codewarsIcon * {
+.footerContent .icon:hover {
+    transform: scale(1.1);
+    opacity: 1;
 }
