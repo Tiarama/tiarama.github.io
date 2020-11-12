@@ -444,6 +444,10 @@ footer {
     background: linear-gradient(to right, #C6FFDD , #FBD786, #f7797d)
 }
 
+a {
+    
+}
+
 .footerLine {
     width: 70vw;
     height: 2px;
@@ -463,8 +467,8 @@ footer {
     justify-content: center;
 }
 
-.footerContent > * {
-    margin: 0 0.8em;
+.footerIconContainer {
+    margin: 0 1.1em;
 }
 
 .footerContent .icon {
