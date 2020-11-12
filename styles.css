@@ -268,6 +268,10 @@ p {
     letter-spacing: 0.02em;
 }
 
+sup {
+    font-size: 0.6em;
+}
+
 #skills p {
     font-size: 1.6em;
     margin-left: 10%;
