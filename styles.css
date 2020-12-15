@@ -18,6 +18,8 @@ body {
     margin: 0;
 }
 
+
+
 /* Hero */
 .header {
     height: 100vh;
@@ -231,7 +233,7 @@ section {
     overflow: auto;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    mask: linear-gradient(#fff, 95%, transparent);
+    -webkit-mask: linear-gradient(#fff, 95%, transparent);
 }
 
 .textContent::-webkit-scrollbar {
@@ -474,4 +476,45 @@ footer {
 .footerContent .icon:hover {
     transform: scale(1.1);
     opacity: 1;
+}
+
+/* Mobile display, should be min width and at the top of doc but I'm trying to cram this in, sorry!*/
+@media screen and (max-width: 768px) {
+    .logo {
+        display: none;
+    }
+    .headerBG {
+        animation: fadeIn 1s forwards;
+    }
+    .main {
+        grid-template-columns: none;
+        grid-template-rows: 1fr 0 1fr 0 1fr;
+    }
+    section {
+        height: 30vh;
+    }
+    .textContent {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        -webkit-mask: linear-gradient(#fff, 90%, transparent);
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+    p {
+        font-size: 0.9em;
+    }
+    #skills p {
+        font-size: 1.1em;
+    }
+    ul {
+        font-size: 0.8em;
+    }
+    .sectionLine {
+        height: 0;
+        width: 0;
+    }
+    .footerIconContainer {
+        margin: 0 0.85em;
+    }
 }
