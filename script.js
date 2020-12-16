@@ -9,11 +9,9 @@ function applyIconClickAnimation(sectionID) {
     const gradientSection = document.querySelector(`${sectionID} .bubbleGradient`)
     const icon = document.querySelector(`${sectionID} .icon`)
     const text = document.querySelector(`${sectionID} .textContent`)
-
     gradientSection.style['z-index'] = '-4'
     outerSection.style.display = 'block'
     innerSection.style.display = 'block'
-    #
     text.style.display = 'block'
     text.style.animation = ICON_TEXT_ANIMATION_DEFINITION
     icon.style.animation = ICON_ANIMATION_DEFINITION
