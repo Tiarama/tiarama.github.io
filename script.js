@@ -13,6 +13,7 @@ function applyIconClickAnimation(sectionID) {
     gradientSection.style['z-index'] = '-4'
     outerSection.style.display = 'block'
     innerSection.style.display = 'block'
+    #
     text.style.display = 'block'
     text.style.animation = ICON_TEXT_ANIMATION_DEFINITION
     icon.style.animation = ICON_ANIMATION_DEFINITION
