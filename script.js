@@ -28,7 +28,7 @@ function applyIconClickAnimation(sectionID) {
     return
 }
 
-// Floating orb animations
+// Floating orb inderterminate movements
 
 function orbPath() {
     const containerHeight = document.getElementsByClassName('orbParent')[0].offsetHeight-(document.getElementsByClassName('orbBG')[0].offsetHeight/2)
@@ -78,3 +78,38 @@ function moveLeftOrb() {
   setInterval(moveLeftOrb, timerIncrease())
   setInterval(moveMiddleOrb, timerIncrease())
   setInterval(moveRightOrb, timerIncrease())
+
+  // Floating orb interactions
+
+  document.getElementsByClassName('orb')[0].addEventListener('mouseenter', function( event ) {
+      event.target.style.backgroundColor = '#C6FFDD';
+      document.getElementById('orbBGLeft').style.height = '35vh'
+      document.getElementById('orbBGLeft').style.width = '35vh'
+      setTimeout(function() {
+          event.target.style.backgroundColor = 'white'
+          document.getElementById('orbBGLeft').style.height = '25vh'
+          document.getElementById('orbBGLeft').style.width = '25vh'
+      }, 500)
+  })
+
+  document.getElementsByClassName('orb')[1].addEventListener('mouseenter', function( event ) {
+    event.target.style.backgroundColor = '#FBD786';
+    document.getElementById('orbBGMiddle').style.height = '35vh'
+    document.getElementById('orbBGMiddle').style.width = '35vh'
+    setTimeout(function() {
+        event.target.style.backgroundColor = 'white'
+        document.getElementById('orbBGMiddle').style.height = '25vh'
+        document.getElementById('orbBGMiddle').style.width = '25vh'
+    }, 500)
+})
+
+document.getElementsByClassName('orb')[2].addEventListener('mouseenter', function( event ) {
+    event.target.style.backgroundColor = '#f7797d';
+    document.getElementById('orbBGRight').style.height = '35vh'
+    document.getElementById('orbBGRight').style.width = '35vh'
+    setTimeout(function() {
+        event.target.style.backgroundColor = 'white'
+        document.getElementById('orbBGRight').style.height = '25vh'
+        document.getElementById('orbBGRight').style.width = '25vh'
+    }, 500)
+})

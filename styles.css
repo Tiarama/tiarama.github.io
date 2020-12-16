@@ -69,7 +69,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: top 5s, left 5s;
+  transition: top 5s, left 5s, height 1s, width 1s;
 }
 
 #orbBGLeft {
@@ -133,9 +133,14 @@ body {
 .orb {
     height: 7vh;
     width: 7vh;
-    background-color: black;
+    background-color: white;
     border-radius: 50%;
-    transition: top 5s, left 4s;
+    transition: top 5s, left 4s, transform 1s, background-color 0.9s;
+}
+
+.orb:hover {
+    transform: scale(0.5);
+    transition: transform 0.4s, background-color 0.4s;
 }
 
 #orbLeft {
@@ -157,6 +162,17 @@ body {
     align-items: center; 
     justify-content: center;
     position: relative;
+    animation: remove 3s forwards;
+}
+
+@keyframes remove {
+    0% {
+    }
+    99% {
+    }
+    100% {
+        height: 0;
+    }
 }
 
 .logoLetter {
@@ -165,7 +181,7 @@ body {
     width: 5rem;
     height: 5rem;
     margin: 0.4rem;
-    animation: bounceIn 3.5s forwards;
+    animation: bounceIn 3s forwards;
     transform: scale(0);
 }
 
@@ -292,7 +308,7 @@ body {
 .main {
     position: relative;
     display: grid;
-    grid-template-columns: 1fr auto 1fr auto 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     overflow: hidden;
 }
