@@ -43,7 +43,7 @@ body {
 
 /* @keyframes fadeIn {
     0% {
-        opacity: 0.15;
+        opacity: 0;
     }
     60% {
         opacity: 0.15;
@@ -62,6 +62,7 @@ body {
 
 .orbBG {
   background-attachment: fixed;
+  position: absolute;
   height: 25vh;
   width: 25vh;
   border-radius: 50%;
@@ -98,17 +99,17 @@ body {
 
 #orbBorderLeft {
     background: radial-gradient(rgba(198, 255, 221), rgba(198, 255, 221, 0.2) 30%, #1e1d1d 75%);
-    animation: 3.3s ease-in 1s infinite flicker;
+    animation: 4s ease-in 1s infinite flicker;
 }
 
 #orbBorderMiddle {
     background: radial-gradient(rgba(251, 215, 134), rgba(251, 215, 134, 0.2) 30%, #1e1d1d 75%);
-    animation: 4s ease-in 1s infinite flicker;
+    animation: 4.8s ease-in 1s infinite flicker;
 }
 
 #orbBorderRight {
     background: radial-gradient(rgba(247, 121, 125), rgba(247, 121, 125, 0.2) 30%, #1e1d1d 75%);
-    animation: 4.6s ease-in 1s infinite flicker;
+    animation: 5.6s ease-in 1s infinite flicker;
 }
 
 @keyframes flicker {
@@ -130,8 +131,8 @@ body {
   }
 
 .orb {
-    height: 10vh;
-    width: 10vh;
+    height: 7vh;
+    width: 7vh;
     background-color: #1e1d1d;
     border-radius: 50%;
     transition: top 5s, left 4s;
