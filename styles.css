@@ -62,8 +62,8 @@ body {
 
 .orbBG {
   background-attachment: fixed;
-  height: 15em;
-  width: 15em;
+  height: 25vh;
+  width: 25vh;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -130,8 +130,8 @@ body {
   }
 
 .orb {
-    height: 5em;
-    width: 5em;
+    height: 10vh;
+    width: 10vh;
     background-color: #1e1d1d;
     border-radius: 50%;
     transition: top 5s, left 4s;
@@ -574,8 +574,16 @@ footer {
     .logo {
         display: none;
     }
-    .headerBG {
+    .orbPage {
         animation: fadeIn 1s forwards;
+    }
+    .orbBG {
+        height: 25vw;
+        width: 25vw;
+    }
+    .orb {
+        height: 10vw;
+        width: 10vw;
     }
     .main {
         grid-template-columns: none;
