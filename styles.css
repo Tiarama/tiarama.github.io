@@ -245,7 +245,8 @@ body {
     display: inline-block;
     bottom: 5%;
     text-align: center;
-    opacity: 0.2
+    opacity: 0.2;
+    cursor: pointer;
 }
 
 .arrowContainer:hover {
@@ -355,6 +356,7 @@ h1 {
     font-weight: 700;
     text-align: center;
     letter-spacing: -0.06em;
+    cursor: default;
 }
 
 #aboutMe h1 {
@@ -376,6 +378,7 @@ p {
     text-align: justify;
     color: #f5f5f5;
     letter-spacing: 0.02em;
+    cursor: default;
 }
 
 sup {
@@ -394,6 +397,7 @@ ul {
     font-weight: 1;
     margin-left: 10%;
     margin-right: 10%;
+    cursor: default;
 }
 
 /* Custom progress bars */
@@ -420,6 +424,22 @@ ul {
     box-shadow: inset -1px 2px 5px 0px grey
   }
 
+/* "Passions" section hover images */
+    li>img {
+        position: absolute;
+        bottom: 0%;
+        height: 0;
+        width: 0;
+        border-radius: 50%;
+        transition: height 0.3s, width 0.3s;
+        filter: drop-shadow( 0 0 0.5em rgb(198, 255, 221))
+    }
+
+    li:hover>img {
+        height: 35vh;
+        width: 35vh;
+        transition: height 0.5s, width 0.5s;
+    }
 
 /* Section click animations */
 @keyframes iconClickText {
@@ -492,6 +512,7 @@ ul {
 .icon * {
     fill: ghostwhite;
     filter: drop-shadow( 5px 3px 5px rgba(0, 0, 0, .7));
+    cursor: pointer;
 }
 
 /* Second icon classes work in chrome */
@@ -535,14 +556,6 @@ ul {
         height: 0em;
         width: 0em;
     }
-}
-
-.sectionLine {
-    width: 3px;
-    height: 20vh;
-    background-color: #D9D9BF;
-    border-radius: 80%;
-    opacity: 0.2;
 }
 
 /* Footer */
