@@ -249,7 +249,7 @@ body {
 }
 
 .arrowContainer:hover {
-    opacity: 0.4;
+    opacity: 0.6;
     transform: scale(1.05)
 }
 
@@ -292,7 +292,7 @@ body {
     }
     80% {
       transform: scale(1);
-      opacity: 0.6;
+      opacity: 1;
     }
     99% {
       transform: scale(5);
@@ -599,12 +599,12 @@ footer {
         width: 25vw;
     }
     .orb {
-        height: 10vw;
-        width: 10vw;
+        height: 5vw;
+        width: 5vw;
     }
     .main {
         grid-template-columns: none;
-        grid-template-rows: 1fr 0 1fr 0 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
     }
     section {
         height: 30vh;
