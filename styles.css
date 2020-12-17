@@ -512,7 +512,7 @@ ul {
 .icon * {
     fill: ghostwhite;
     filter: drop-shadow( 5px 3px 5px rgba(0, 0, 0, .7));
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 /* Second icon classes work in chrome */
