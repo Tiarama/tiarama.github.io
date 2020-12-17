@@ -11,7 +11,7 @@ function applyIconClickAnimation(sectionID) {
     outerSection.style.display = 'block'
     innerSection.style.display = 'block'
     text.style.display = 'block'
-    text.style.animation = `iconClickText 4s forwards`
+    text.style.animation = `iconClickText 3s forwards`
     icon.style.animation = 'iconClick 0.4s forwards'
     outerSection.style.animation = 'bubbleOuterAnimation 2s forwards'
     innerSection.style.animation = 'bubbleInnerAnimation 2.5s forwards'
