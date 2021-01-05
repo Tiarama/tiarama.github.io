@@ -349,6 +349,10 @@ section {
     display: none;
   }
 
+a {
+    color: white
+}
+
 h1 {    
     font-style: bold;
     font-size: 4em;
