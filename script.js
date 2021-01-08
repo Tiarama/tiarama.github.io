@@ -75,7 +75,7 @@ function moveLeftOrb() {
   setInterval(moveMiddleOrb, timerIncrease())
   setInterval(moveRightOrb, timerIncrease())
 
-  // Floating orb interactions
+  // Floating orb interactions ('if' statement necessary as event breaks display layout on smaller screens)
 
   document.getElementsByClassName('orb')[0].addEventListener('mouseenter', function( event ) {
       if (window.innerWidth < 1024) {

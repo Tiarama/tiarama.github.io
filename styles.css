@@ -135,10 +135,10 @@ body {
     width: 7vh;
     background-color: white;
     border-radius: 50%;
-    transition: top 5s, left 4s, transform 1s, background-color 0.9s;
+    opacity: 1;
+    transition: top 5s, left 4s, transform 1s, background-color 0.9s, opacity 0.4s ease-in;
 }
 
-/* Hover does not work on mobile and causes layout to display incorrectly*/
 @media screen and (min-width: 1024px) {
     .orb:hover {
         transform: scale(0.5);
@@ -621,6 +621,33 @@ footer {
     .orb {
         height: 5vw;
         width: 5vw;
+    }
+    #orbBorderLeft:hover {
+        background: black;
+    }
+    #orbBorderLeft:hover .orb {
+        transform: scale(5);
+        background-color: rgba(198, 255, 221);
+        opacity: 0;
+        transition: transform 0.4s, background-color 0.1s, opacity 0.25s;
+    }
+    #orbBorderMiddle:hover {
+        background: black;
+    }
+    #orbBorderMiddle:hover .orb {
+        transform: scale(5);
+        background-color: rgba(251, 215, 134);
+        opacity: 0;
+        transition: transform 0.4s, background-color 0.1s, opacity 0.25s;
+    }
+    #orbBorderRight:hover {
+        background: black;
+    }
+    #orbBorderRight:hover .orb {
+        transform: scale(5);
+        background-color: rgba(247, 121, 125);
+        opacity: 0;
+        transition: transform 0.4s, background-color 0.1s, opacity 0.25s;
     }
     .main {
         grid-template-columns: none;
