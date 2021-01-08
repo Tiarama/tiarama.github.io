@@ -78,6 +78,9 @@ function moveLeftOrb() {
   // Floating orb interactions
 
   document.getElementsByClassName('orb')[0].addEventListener('mouseenter', function( event ) {
+      if (window.innerWidth < 1024) {
+          return
+      }
       event.target.style.backgroundColor = '#C6FFDD';
       document.getElementById('orbBGLeft').style.height = '35vh'
       document.getElementById('orbBGLeft').style.width = '35vh'
@@ -89,6 +92,9 @@ function moveLeftOrb() {
   })
 
   document.getElementsByClassName('orb')[1].addEventListener('mouseenter', function( event ) {
+    if (window.innerWidth < 1024) {
+        return
+    }
     event.target.style.backgroundColor = '#FBD786';
     document.getElementById('orbBGMiddle').style.height = '35vh'
     document.getElementById('orbBGMiddle').style.width = '35vh'
@@ -100,6 +106,9 @@ function moveLeftOrb() {
 })
 
 document.getElementsByClassName('orb')[2].addEventListener('mouseenter', function( event ) {
+    if (window.innerWidth < 1024) {
+        return
+    }
     event.target.style.backgroundColor = '#f7797d';
     document.getElementById('orbBGRight').style.height = '35vh'
     document.getElementById('orbBGRight').style.width = '35vh'
