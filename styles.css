@@ -138,6 +138,7 @@ body {
     transition: top 5s, left 4s, transform 1s, background-color 0.9s;
 }
 
+/* Hover does not work on mobile and causes layout to display incorrectly*/
 @media screen and (min-width: 1024px) {
     .orb:hover {
         transform: scale(0.5);
@@ -528,29 +529,29 @@ ul {
 
 .aboutMeIcon:hover * {
     fill: #C6FFDD;
-    filter: drop-shadow( 0 0 150px rgba(198, 255, 221, .7));
+    filter: drop-shadow( 0 0 100px rgba(198, 255, 221, .7));
 }
 
 .aboutMeIcon:hover {
-    filter: drop-shadow( 0 0 25px rgba(198, 255, 221, .7));
+    filter: drop-shadow( 0 0 20px rgba(198, 255, 221));
 }
 
 .skillsIcon:hover * {
     fill: #FBD786;
-    filter: drop-shadow( 0 0 150px rgba(251, 215, 134, .7));
+    filter: drop-shadow( 0 0 100px rgba(251, 215, 134, .7));
 }
 
 .skillsIcon:hover {
-    filter: drop-shadow( 0 0 25px rgba(251, 215, 134, .7));
+    filter: drop-shadow( 0 0 20px rgba(251, 215, 134));
 }
 
 .interestsIcon:hover * {
     fill: #f7797d;
-    filter: drop-shadow( 0 0 150px rgba(247, 121, 125, .7));
+    filter: drop-shadow( 0 0 100px rgba(247, 121, 125, .7));
 }
 
 .interestsIcon:hover {
-    filter: drop-shadow( 0 0 25px rgba(247, 121, 125, .7));
+    filter: drop-shadow( 0 0 20px rgba(247, 121, 125));
 }
 
 @keyframes iconClick {
