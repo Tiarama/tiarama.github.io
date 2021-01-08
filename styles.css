@@ -138,9 +138,11 @@ body {
     transition: top 5s, left 4s, transform 1s, background-color 0.9s;
 }
 
-.orb:hover {
-    transform: scale(0.5);
-    transition: transform 0.4s, background-color 0.4s;
+@media screen and (min-width: 1024px) {
+    .orb:hover {
+        transform: scale(0.5);
+        transition: transform 0.4s, background-color 0.4s;
+    }
 }
 
 #orbLeft {
