@@ -428,7 +428,7 @@ ul {
     padding-left: 40%;
     border-radius: 999px;
     background: linear-gradient(128deg, #C6FFDD 0%, #FBD786 60%, #f7797d 100%);
-    box-shadow: inset -1px 2px 5px 0px grey
+    box-shadow: inset -1px 2px 2px 0px grey
   }
 
 /* "Passions" section hover images */
