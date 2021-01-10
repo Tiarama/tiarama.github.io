@@ -18,7 +18,9 @@ body {
     margin: 0;
 }
 
-
+* {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
 
 /* Hero */
 .header {
@@ -610,6 +612,9 @@ footer {
 
 /* Mobile display, should be min width and at the top of doc but I'm trying to cram this in, sorry!*/
 @media screen and (max-width: 768px) {
+    * {
+        user-select: none;
+     }
     .orbPage {
         animation: fadeIn 1s forwards;
     }
@@ -648,8 +653,33 @@ footer {
         opacity: 0;
         transition: transform 0.4s, background-color 0.1s, opacity 0.25s;
     }
+    .headerArrowRipple {
+        animation: ripple 1s forwards;
+    }
+    @keyframes ripple {
+        0% {
+          transform: scale(1)
+        }
+        15% {
+          transform: scale(1);
+          opacity: 1;
+        }
+        99% {
+          transform: scale(5);
+          opacity: 0;
+      }
+        100% {
+          transform: scale(0); 
+          opacity: 0;
+        }
+    }
     .arrowContainer {
         bottom: 10%;
+    }
+    .arrowContainer:hover {
+        opacity: 0.2;
+        transform: scale(0) rotate(360deg);
+        transition: transform 0.5s;
     }
     .main {
         grid-template-columns: none;
