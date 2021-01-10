@@ -159,6 +159,7 @@ body {
 }
 
 /* Tiarama logo & animation */
+@media screen and (min-width: 1024px) {
 .logo {
     display: flex;
     flex-direction: row;
@@ -241,6 +242,7 @@ body {
       transform: scale(0)
     }
   }
+}
 
 /* Scroll down button & animation */
 .arrowContainer {
@@ -608,9 +610,6 @@ footer {
 
 /* Mobile display, should be min width and at the top of doc but I'm trying to cram this in, sorry!*/
 @media screen and (max-width: 768px) {
-    .logo {
-        display: none;
-    }
     .orbPage {
         animation: fadeIn 1s forwards;
     }
@@ -648,6 +647,9 @@ footer {
         background-color: rgba(247, 121, 125);
         opacity: 0;
         transition: transform 0.4s, background-color 0.1s, opacity 0.25s;
+    }
+    .arrowContainer {
+        bottom: 10%;
     }
     .main {
         grid-template-columns: none;
